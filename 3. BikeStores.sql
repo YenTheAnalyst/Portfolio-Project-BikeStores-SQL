@@ -15,6 +15,7 @@ JOIN sales.customers cus
 ON ord.customer_id = cus.customer_id
 JOIN sales.order_items ite
 ON ord.order_id = ite.order_id
+JOIN production.products pro
 ON ite.product_id = pro.product_id
 JOIN production.categories cat
 ON pro.category_id = cat.category_id
